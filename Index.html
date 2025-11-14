@@ -1,1 +1,198 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Math_Criador — Blog de Tudo um Pouco</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', Arial, sans-serif;
+      background: #f5f5f5;
+      color: #333;
+    }
+    /* Header & Banner */
+    header {
+      padding: 0;
+      text-align: center;
+    }
+    .banner {
+      background: linear-gradient(135deg,#0f172a 0%, #0ea5a8 50%, #7c3aed 100%);
+      color: #fff;
+      padding: 34px 20px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 20px;
+      flex-wrap: wrap;
+    }
+    .banner .brand {
+      display: flex;
+      align-items: center;
+      gap: 16px;
+    }
+    .logo {
+      width: 74px;
+      height: 74px;
+      border-radius: 14px;
+      display: inline-grid;
+      place-items: center;
+      background: rgba(255,255,255,0.12);
+      box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+      font-weight: 800;
+      font-size: 22px;
+      color: #fff;
+      letter-spacing: -1px;
+    }
+    .brand h1 {
+      margin: 0;
+      font-size: 26px;
+      line-height: 1;
+    }
+    .brand p.tagline {
+      margin: 3px 0 0 0;
+      font-weight: 400;
+      opacity: 0.95;
+      font-size: 13px;
+    }
+    .banner .cta {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 10px;
+    }
+    .btn-primary {
+      background: #111827;
+      color: #fff;
+      padding: 10px 16px;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 700;
+      box-shadow: 0 8px 24px rgba(2,6,23,0.45);
+    }
+    .banner .motto {
+      font-style: italic;
+      opacity: 0.95;
+      font-size: 14px;
+    }
+    .socials {
+      display: flex;
+      gap: 10px;
+      justify-content: center;
+      margin-top: 6px;
+    }
+    .socials a {
+      display: inline-block;
+      width: 34px;
+      height: 34px;
+      border-radius: 8px;
+      background: rgba(255,255,255,0.08);
+      display: grid;
+      place-items: center;
+      text-decoration: none;
+      color: #fff;
+      font-weight: 700;
+      font-size: 14px;
+    }
+
+    nav {
+      background: #222;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 10px 0;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .container {
+      max-width: 900px;
+      margin: auto;
+      padding: 20px;
+    }
+    .post {
+      background: #fff;
+      padding: 20px;
+      margin-bottom: 20px;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    .post h2 {
+      margin-top: 0;
+    }
+    footer {
+      background: #111;
+      color: #fff;
+      text-align: center;
+      padding: 20px;
+      margin-top: 40px;
+    }
+
+    /* Responsividade */
+    @media (max-width:720px) {
+      .banner { padding: 20px; }
+      .banner .cta { align-items: center; }
+      .brand h1 { font-size: 20px; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="banner">
+      <div class="brand">
+        <div class="logo" style="background:none; padding:0; overflow:hidden;"><img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYn" style="width:74px; height:74px; object-fit:cover; border-radius:14px;" /></div>
+        <div>
+          <h1>Math_Criador</h1>
+          <p class="tagline">Aqui eu falo de tudo um pouco — cultura pop, tecnologia, HQs e curiosidades.</p>
+          <div class="socials">
+            <a href="#" title="YouTube">YT</a>
+            <a href="#" title="Instagram">IG</a>
+            <a href="#" title="Twitter">TW</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="cta">
+        <div class="motto">“Se ideias criam o mundo, eu tô aqui pra bagunçar o seu! Então já senta que a reunião vai começar!”</div>
+        <a href="#" class="btn-primary">Ver últimos artigos</a>
+      </div>
+    </div>
+  </header>
+
+  <nav>
+    <a href="#">Início</a>
+    <a href="#">Curiosidades</a>
+    <a href="#">Geek / HQs</a>
+    <a href="#">Tecnologia</a>
+    <a href="#">Sobre</a>
+    <a href="#">Contato</a>
+  </nav>
+
+  <div class="container">
+    <div class="post">
+      <h2>Título do Artigo Exemplo</h2>
+      <p><small>Publicado em 14/11/2025</small></p>
+      <p>
+        Este é um texto de exemplo para o seu artigo. Você pode substituir este conteúdo
+        por qualquer texto, imagem ou informação que quiser publicar.
+      </p>
+    </div>
+
+    <div class="post">
+      <h2>Outro Artigo do Blog</h2>
+      <p><small>Publicado em 14/11/2025</small></p>
+      <p>
+        Este é mais um modelo de post. Basta duplicar esta estrutura para criar novos
+        artigos no seu site.
+      </p>
+    </div>
+  </div>
+
+  <footer>
+    <p>© 2025 Meu Blog — Todos os direitos reservados.</p>
+  </footer>
+</body>
+</html>
 
